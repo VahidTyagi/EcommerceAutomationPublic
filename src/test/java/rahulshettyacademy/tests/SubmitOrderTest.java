@@ -38,7 +38,8 @@ public class SubmitOrderTest extends BaseTest{
 	@Test(dataProvider="getData",groups= {"Purchase"})
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
 	{
-
+		
+		System.out.println("main Vahid Tyagi brach");
 		
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
@@ -53,6 +54,7 @@ public class SubmitOrderTest extends BaseTest{
 		String confirmMessage = confirmationPage.getConfirmationMessage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
+		System.out.println("main Vahid Tyagi brach");
 
 	}
 	
