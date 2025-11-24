@@ -45,6 +45,8 @@ public class SubmitOrderTest extends BaseTest{
 
 		
 		System.out.println("main Vahid Tyagi brach");
+		
+		System.out.println("Github Dharm user update");
 
 		
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
@@ -61,6 +63,8 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		System.out.println("main Vahid Tyagi brach");
+		
+		System.out.println("Github Dharm user update");
 
 	}
 	
