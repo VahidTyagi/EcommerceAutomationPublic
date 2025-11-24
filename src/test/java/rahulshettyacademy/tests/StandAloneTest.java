@@ -40,6 +40,11 @@ public class StandAloneTest extends BaseTest {
         // BaseTest.java k launchApplication method main humne object bna diya and glibally public bi bna diya then is above line ki bi koi need nii. 
         // isse
         //ProductCatalogue productCatalogue = landingPage.loginApplication(email,password);
+    	
+    	
+    	System.out.println("Added first in develop_branch in gitstuff By Vahid Tyagi");
+    	
+    	
         ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"),input.get("password"));
         List<WebElement> products = productCatalogue.getProductList();
         productCatalogue.addProductToCart(input.get("product"));
@@ -54,6 +59,8 @@ public class StandAloneTest extends BaseTest {
         ConfirmationPage confirmationPage = cp.submitOrder();
         String confirmMessage = confirmationPage.getConfirmationMessage();
         Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+        
+        System.out.println("Added first in develop_branch in gitstuff By Vahid Tyagi");
         
     }
     // orderHistory 
