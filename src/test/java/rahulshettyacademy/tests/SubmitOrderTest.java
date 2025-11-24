@@ -40,6 +40,7 @@ public class SubmitOrderTest extends BaseTest{
 	{
 		
 		System.out.println("main Vahid Tyagi brach");
+		System.out.println("main Vahid Tyagi brach");
 		
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
@@ -55,7 +56,11 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		System.out.println("main Vahid Tyagi brach");
-
+		System.out.println("main Vahid Tyagi brach");
+		System.out.println("main Vahid Tyagi brach");
+		System.out.println("main Vahid Tyagi brach");
+		System.out.println("main Vahid Tyagi brach");
+		System.out.println("main Vahid Tyagi brach");
 	}
 	
 	@Test(dependsOnMethods= {"submitOrder"})
