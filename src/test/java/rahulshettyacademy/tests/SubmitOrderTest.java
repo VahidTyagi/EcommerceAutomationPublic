@@ -42,7 +42,7 @@ public class SubmitOrderTest extends BaseTest{
 		System.out.println("Github Dharm user update");
 		System.out.println("Github Dharm user update");
 		
-
+		System.out.println("Direct changes by Master on GITHUB");
 		
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
@@ -64,17 +64,19 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		System.out.println("main Vahid Tyagi brach");
-<<<<<<< HEAD
+
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
-=======
+
 		
 		System.out.println("Github Dharm user update");
 
->>>>>>> 1fed21d07f03ad6d9d2e5bf6681e76879bef6ff9
+		System.out.println("Direct changes by Master on GITHUB");
+
+
 	}
 	
 	@Test(dependsOnMethods= {"submitOrder"})
