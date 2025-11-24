@@ -38,9 +38,17 @@ public class SubmitOrderTest extends BaseTest{
 	@Test(dataProvider="getData",groups= {"Purchase"})
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
 	{
+
+		System.out.println("Github Dharm user update");
+		System.out.println("Github Dharm user update");
+		
+
 		
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
+		
+		System.out.println("Github Dharm user update");
+
 		
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
@@ -56,11 +64,17 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		System.out.println("main Vahid Tyagi brach");
+<<<<<<< HEAD
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
 		System.out.println("main Vahid Tyagi brach");
+=======
+		
+		System.out.println("Github Dharm user update");
+
+>>>>>>> 1fed21d07f03ad6d9d2e5bf6681e76879bef6ff9
 	}
 	
 	@Test(dependsOnMethods= {"submitOrder"})
